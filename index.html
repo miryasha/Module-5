@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional portfolio showcasing web development projects, skills, and experience">
+    <title>Miryasha - Web Developer Portfolio</title>
+      <!-- Favicon -->
+      <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+      <!-- For modern browsers -->
+      <link rel="icon" type="image/png" sizes="32x32" href="./logo.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Header Section -->
+    <header class="bg-white shadow-md" role="banner">
+        <nav class="container mx-auto px-6 py-4" role="navigation">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl font-bold text-gray-800">Miryasha</h1>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="text-gray-600 hover:text-gray-900">About</a></li>
+                    <li><a href="#projects" class="text-gray-600 hover:text-gray-900">Projects</a></li>
+                    <li><a href="#skills" class="text-gray-600 hover:text-gray-900">Skills</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+        <!-- About Section -->
+        <section id="about" class="mb-16" aria-labelledby="about-heading">
+            <h2 id="about-heading" class="text-3xl font-bold mb-6">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <img src="./pexels-pixabay-52531.jpg" alt="Professional headshot of Miryasha"
+                        class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "I'm a passionate web developer with 8 years of experience in creating responsive, accessible,
+                        and user-friendly websites. With a strong foundation in modern web technologies and best
+                        practices, I strive to build digital experiences that make a difference.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-16" aria-labelledby="projects-heading">
+            <h2 id="projects-heading" class="text-3xl font-bold mb-6">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="https://miryasha.com" target="_blank" rel="noopener noreferrer" class="block">
+                    <article
+                        class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <figure>
+                            <img src="./Screenshot.png" alt="Screenshot of My Personal Website" class="w-full">
+                            <figcaption class="p-4">
+                                <h3 class="text-xl font-semibold mb-2">My Personal Website</h3>
+                                <p class="text-gray-600">My personal portfolio website showcasing my work and
+                                    experience.</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </a>
+                <!-- Additional project articles with similar structure -->
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-16" aria-labelledby="skills-heading">
+            <h2 id="skills-heading" class="text-3xl font-bold mb-6">Skills</h2>
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <ul class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <li class="flex items-center"><span class="w-4 h-4 bg-green-500 rounded-full mr-2"></span>Java</li>
+                    <li class="flex items-center"><span class="w-4 h-4 bg-green-500 rounded-full mr-2"></span>C#</li>
+                    <li class="flex items-center"><span class="w-4 h-4 bg-green-500 rounded-full mr-2"></span>Python
+                    </li>
+                    <li class="flex items-center"><span class="w-4 h-4 bg-green-500 rounded-full mr-2"></span>HTML5/CSS3
+                    </li>
+                    <li class="flex items-center"><span class="w-4 h-4 bg-green-500 rounded-full mr-2"></span>JavaScript
+                    </li>
+                    <li class="flex items-center"><span class="w-4 h-4 bg-green-500 rounded-full mr-2"></span>React</li>
+                    <li class="flex items-center"><span class="w-4 h-4 bg-green-500 rounded-full mr-2"></span>Node.js
+                    </li>
+                    <li class="flex items-center"><span
+                            class="w-4 h-4 bg-green-500 rounded-full mr-2"></span>Accessibility</li>
+                    <li class="flex items-center"><span class="w-4 h-4 bg-green-500 rounded-full mr-2"></span>SEO</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading" class="text-3xl font-bold mb-6">Contact Me</h2>
+            <form class="bg-white rounded-lg shadow-lg p-6" action="#" method="POST">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 mb-2">Name</label>
+                    <input type="text" id="name" name="name" required
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        aria-required="true">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 mb-2">Email</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        aria-required="true">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 mb-2">Message</label>
+                    <textarea id="message" name="message" rows="4" required
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        aria-required="true"></textarea>
+                </div>
+                <button type="submit"
+                    class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    Send Message
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-16" role="contentinfo">
+        <div class="container mx-auto px-6 py-8">
+            <p class="text-center">&copy; 2024 Miryasha. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
